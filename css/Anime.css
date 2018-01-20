@@ -1,0 +1,62 @@
+#bar {
+    top: -90px; right:1%;/*ПОЛОЖЕНИЕ*/
+    padding:1%;/*ПОЛЯ*/
+    margin: 0;/*ОТСТУП*/
+    position: absolute;/*АПСОЛЮТНОЕ ПОЗИЦИОНИРОВАНИЕ*/
+    width: 1%;/*ШИРИНА*/
+    background: #b21c16;/*ЦВЕТ ФОНА*/
+    color: #e4e2ff;/*ЦВЕТ ТЕКСТА*/
+    text-align: center;/*ВЫРАВНИВАНИЕ ПО ЦЕНТРУ*/
+    transition: top 1s ease-out 0.5s;/*Переход*/
+    transition-duration: 1s;/*Длительность анимации*/
+}
+#bar:hover {
+    top: 5px; /*При наведении курсорв*/
+}
+.warn {
+    padding: 1%;
+    border-radius: 1%;
+    text-align: center;
+    transition-duration: 5s;
+}
+.warn:hover {
+    background: #fc0;
+}
+.warn {
+    background: #fc0;
+    padding: 1%;
+    top: -50%;
+    position: absolute;/*Абсолютное позиционирование*/
+    left:0;right: 0;
+}
+.fadeInTop{
+    animation-name: fadeInTop ;/*Имя для вызова функции*/
+    animation-duration: 1s;/*Продолжительность анимации*/
+    animation-delay: 0.5s;/*Задержка*/
+    animation-fill-mode: forwards;/*Остановка после конца анимации*/
+}
+@keyframes fadeInTop {
+    /*Правило @keyframes устанавливает ключивые
+      кадры при анимации элемента.from*/
+    from{
+        top: -50%;
+    }
+    to {
+        top:0;
+    }
+}
+.menu{
+    position: absolute;
+    height: 50px;width: 100%;
+    background: #22ff3a;
+    border-bottom: 10px solid #1618ff;
+    top: -50px;
+    /*Анимация*/
+    transition-property: top;
+    /*Установка имя стилевого свойства*/
+    transition-duration: 2s;
+    /*длительность анимации*/
+}
+.menu:hover{
+    top:0;
+}
