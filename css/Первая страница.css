@@ -1,0 +1,25 @@
+header{
+    background-color: #ffa092;
+    border: thin black solid;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+h1{
+    color: #d59266;
+}
+tr {
+    background: #fbfff4;
+}
+strong{
+    color: #ff8173;
+
+}
+footer {
+    color: rgba(19, 100, 0, 0.98);
+    background-color: #c2fee4;
+    border: thin #6f9955 solid;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
